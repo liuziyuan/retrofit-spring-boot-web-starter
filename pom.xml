@@ -6,7 +6,7 @@
 
     <groupId>io.github.liuziyuan</groupId>
     <artifactId>retrofit-spring-boot-web-starter</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>retrofit-spring-boot-web-starter</description>
@@ -41,7 +41,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.boot.version>2.3.12.RELEASE</spring.boot.version>
         <lombok.version>1.18.22</lombok.version>
-        <retrofit-starter.version>1.1.0-SNAPSHOT</retrofit-starter.version>
+        <retrofit-starter.version>1.1.0</retrofit-starter.version>
         <junit.version>4.13.2</junit.version>
         <retrofit.version>2.9.0</retrofit.version>
     </properties>
@@ -156,31 +156,31 @@
                     </execution>
                 </executions>
             </plugin>
-            <!--            &lt;!&ndash; GPG &ndash;&gt;-->
-            <!--            <plugin>-->
-            <!--                <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                <artifactId>maven-gpg-plugin</artifactId>-->
-            <!--                <version>1.6</version>-->
-            <!--                <executions>-->
-            <!--                    <execution>-->
-            <!--                        <id>sign-artifacts</id>-->
-            <!--                        <phase>verify</phase>-->
-            <!--                        <goals>-->
-            <!--                            <goal>sign</goal>-->
-            <!--                        </goals>-->
-            <!--                    </execution>-->
-            <!--                </executions>-->
-            <!--            </plugin>-->
-            <!--            <plugin>-->
-            <!--                <groupId>org.sonatype.central</groupId>-->
-            <!--                <artifactId>central-publishing-maven-plugin</artifactId>-->
-            <!--                <version>0.4.0</version>-->
-            <!--                <extensions>true</extensions>-->
-            <!--                <configuration>-->
-            <!--                    <publishingServerId>central</publishingServerId>-->
-            <!--                    <tokenAuth>true</tokenAuth>-->
-            <!--                </configuration>-->
-            <!--            </plugin>-->
+            <!-- GPG -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.4.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                    <tokenAuth>true</tokenAuth>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
