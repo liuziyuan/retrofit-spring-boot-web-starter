@@ -1,14 +1,12 @@
 package io.github.liuziyuan.retrofit.spring.boot.web;
 
-import io.github.liuziyuan.retrofit.core.GlobalParamConfig;
 import io.github.liuziyuan.retrofit.core.OverrideRule;
+import io.github.liuziyuan.retrofit.core.RetrofitBuilderExtension;
 import io.github.liuziyuan.retrofit.core.builder.*;
-import io.github.liuziyuan.retrofit.spring.boot.RetrofitComponent;
 
 import java.util.ArrayList;
 
-@RetrofitComponent
-public class WebCustomConfigSetting implements GlobalParamConfig {
+public class CustomRetrofitBuilderExtension implements RetrofitBuilderExtension {
 
     @Override
     public boolean enable() {
