@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class SpringBootConfig {
+public class RetrofitSpringBootWebConfig {
     @Bean
     @ConditionalOnMissingBean
-    public CustomRetrofitBuilderExtension webCustomConfig() {
+    public CustomRetrofitBuilderExtension retrofitSpringBootWebConfig() {
         return new CustomRetrofitBuilderExtension();
     }
 }
