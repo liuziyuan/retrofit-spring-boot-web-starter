@@ -6,7 +6,7 @@
 
     <groupId>io.github.liuziyuan</groupId>
     <artifactId>retrofit-spring-boot-web-starter</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.1-jdk17</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>retrofit-spring-boot-web-starter</description>
@@ -33,14 +33,14 @@
     </developers>
 
     <properties>
-        <java.version>1.8</java.version>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <java.source.version>1.8</java.source.version>
-        <java.target.version>1.8</java.target.version>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <java.source.version>17</java.source.version>
+        <java.target.version>17</java.target.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <retrofit-starter.version>1.2.1</retrofit-starter.version>
-        <spring.boot.version>2.3.12.RELEASE</spring.boot.version>
+        <retrofit-starter.version>1.2.2-jdk17</retrofit-starter.version>
+        <spring.boot.version>3.2.3</spring.boot.version>
         <lombok.version>1.18.22</lombok.version>
         <junit.version>4.13.2</junit.version>
         <retrofit.version>2.9.0</retrofit.version>
@@ -107,7 +107,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
+                <version>3.3.0</version>
                 <configuration>
                     <archive>
                         <manifest>
@@ -132,7 +132,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.0.1</version>
+                <version>3.3.0</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -146,7 +146,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
+                <version>3.6.3</version>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
