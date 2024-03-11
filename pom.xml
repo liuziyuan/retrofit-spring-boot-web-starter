@@ -6,7 +6,7 @@
 
     <groupId>io.github.liuziyuan</groupId>
     <artifactId>retrofit-spring-boot-web-starter</artifactId>
-    <version>1.1.1-jdk17</version>
+    <version>1.1.1</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>retrofit-spring-boot-web-starter</description>
@@ -33,11 +33,11 @@
     </developers>
 
     <properties>
-        <java.version>17</java.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <java.source.version>17</java.source.version>
-        <java.target.version>17</java.target.version>
+        <default.java.version>1.8</default.java.version>
+        <maven.compiler.source>${default.java.version}</maven.compiler.source>
+        <maven.compiler.target>${default.java.version}</maven.compiler.target>
+        <java.source.version>${default.java.version}</java.source.version>
+        <java.target.version>${default.java.version}</java.target.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <retrofit-starter.version>1.2.2-jdk17</retrofit-starter.version>
         <spring.boot.version>3.2.3</spring.boot.version>
@@ -46,8 +46,39 @@
         <retrofit.version>2.9.0</retrofit.version>
     </properties>
 
-    <dependencies>
+    <!--    在最终发布时候，需要切换Jdk版本直接使用mvn clean install 发布到本地Maven库，或者使用 mvn clean deploy发布到maven中央库-->
+    <profiles>
+        <profile>
+            <id>jdk8</id>
+            <activation>
+                <jdk>1.8</jdk>
+            </activation>
+            <properties>
+                <maven.compiler.source>1.8</maven.compiler.source>
+                <maven.compiler.target>1.8</maven.compiler.target>
+                <java.version>1.8</java.version>
+                <java.source.version>1.8</java.source.version>
+                <java.target.version>1.8</java.target.version>
+                <classifier></classifier>
+            </properties>
+        </profile>
+        <profile>
+            <id>jdk17</id>
+            <activation>
+                <jdk>[17,)</jdk>
+            </activation>
+            <properties>
+                <maven.compiler.source>17</maven.compiler.source>
+                <maven.compiler.target>17</maven.compiler.target>
+                <java.version>17</java.version>
+                <java.source.version>17</java.source.version>
+                <java.target.version>17</java.target.version>
+                <classifier>jdk17</classifier>
+            </properties>
+        </profile>
+    </profiles>
 
+    <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
