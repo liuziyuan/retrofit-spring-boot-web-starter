@@ -146,6 +146,7 @@
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
                     </archive>
+                    <classifier>${classifier}</classifier>
                 </configuration>
             </plugin>
             <!-- Compile -->
