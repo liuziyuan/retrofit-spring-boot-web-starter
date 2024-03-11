@@ -59,7 +59,7 @@
                 <java.version>1.8</java.version>
                 <java.source.version>1.8</java.source.version>
                 <java.target.version>1.8</java.target.version>
-                <classifier>jdk8</classifier>
+                <classifier></classifier>
             </properties>
         </profile>
         <profile>
