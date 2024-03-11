@@ -46,6 +46,7 @@
         <retrofit.version>2.9.0</retrofit.version>
     </properties>
 
+<!--    在最终发布时候，需要切换Jdk版本直接使用mvn clean install 发布到本地Maven库，或者使用 mvn clean deploy发布到maven中央库-->
     <profiles>
         <profile>
             <id>jdk8</id>
