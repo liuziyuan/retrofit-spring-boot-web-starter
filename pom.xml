@@ -57,7 +57,7 @@
                 <java.source.version>1.8</java.source.version>
                 <java.target.version>1.8</java.target.version>
                 <spring.boot.version>2.3.12.RELEASE</spring.boot.version>
-                <retrofit-starter.version>1.2.2</retrofit-starter.version>
+                <retrofit-starter.version>1.3.0</retrofit-starter.version>
                 <classifier></classifier>
             </properties>
         </profile>
@@ -73,7 +73,7 @@
                 <java.source.version>17</java.source.version>
                 <java.target.version>17</java.target.version>
                 <spring.boot.version>3.2.3</spring.boot.version>
-                <retrofit-starter.version>1.2.2-jdk17</retrofit-starter.version>
+                <retrofit-starter.version>1.3.0-jdk17</retrofit-starter.version>
                 <classifier>jdk17</classifier>
             </properties>
         </profile>
