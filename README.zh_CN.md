@@ -3,6 +3,16 @@
 简化Retrofit在Springboot项目中的使用，当你的项目中使用了Spring Web组件，那么你可以使用`retrofit-spring-boot-web-starter`作为Retrofit Client进行Http请求,
 组件提供了同步的Adapter和给予Jackson的Converter.
 
+
+| jdk version | Springboot version   |
+|-------------|----------------------|
+| jdk8        | 2.0.0.RELEASE -- 2.7.x |
+| jdk11       | 2.0.3.RELEASE -- 2.7.x |
+| jdk17       | 2.4.2 -- 2.7.x       |
+| jdk21       | 2.7.16 -- 2.7.x      |
+
+**_ `x`是Springboot2最后一个版本号._**
+
 ## 用法
 1. 在pom.xml中添加依赖
 ```xml

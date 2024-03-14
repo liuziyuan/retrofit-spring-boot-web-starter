@@ -1,11 +1,24 @@
 # Retrofit Spring boot web starter
 
-[中文文档](https://github.com/liuziyuan/retrofit-spring-boot-web-starter/blob/master/README_CN.md)
+[中文文档](https://github.com/liuziyuan/retrofit-spring-boot-web-starter/blob/master/README.zh_CN.md)
 
 ## Overview
 Simplify the use of Retrofit in the Springboot project. When using the `Spring-Web` component in your project, you can use `retrofit-spring-boot-web-start` as the Retrofit client for HTTP requests,
 The component provides a synchronized adapter and a converter implemented by `Jackson`
 
+| jdk version | Springboot version   |
+|-------------|----------------------|
+| jdk8        | 2.0.0.RELEASE -- 2.7.x |
+| jdk11       | 2.0.3.RELEASE -- 2.7.x |
+| jdk17       | 2.4.2 -- 2.7.x       |
+| jdk21       | 2.7.16 -- 2.7.x      |
+
+**_ The `x` is the Springboot2 latest version._**
+
+
+                            本文博主FisrtBqy。文章内容仅供学习交流，未经允许请勿用于论文写作、竞赛答辩、书刊出版、商业活动等。如有问题请联系作者：FisrtBqy@163.com
+
+原文链接：https://blog.csdn.net/FisrtBqy/article/details/123606357
 ## 用法
 1. Adding dependencies in pom.xml
 ```xml
