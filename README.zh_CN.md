@@ -4,14 +4,13 @@
 组件提供了同步的Adapter和给予Jackson的Converter.
 
 
-| jdk version | Springboot version   |
-|-------------|----------------------|
-| jdk8        | 2.0.0.RELEASE -- 2.7.x |
-| jdk11       | 2.0.3.RELEASE -- 2.7.x |
-| jdk17       | 2.4.2 -- 2.7.x       |
-| jdk21       | 2.7.16 -- 2.7.x      |
+| jdk version | Springboot2 version    | Springboot3 version |
+|-------------|------------------------|---------------------|
+| jdk8        | 2.0.0.RELEASE -- 2.7.x | NA                  |
+| jdk11       | 2.0.3.RELEASE -- 2.7.x | NA                  |
+| jdk17       | 2.4.2 -- 2.7.x         | 3.0.0 - latest      |
+| jdk21       | 2.7.16 -- 2.7.x        | 3.1.0 - latest      |
 
-**_ `x`是Springboot2最后一个版本号._**
 
 ## 用法
 1. 在pom.xml中添加依赖
@@ -121,5 +120,4 @@ public class HelloController {
 ## 完整的代码示例
 [Demo项目链接](https://github.com/liuziyuan/retrofit-spring-boot-starter-samples/tree/main/retrofit-spring-boot-web-starter-sample)
 
-[服务器端项目链接](https://github.com/liuziyuan/retrofit-spring-boot-starter-samples/tree/main/retrofit-spring-boot-starter-sample-backend-services)
 
